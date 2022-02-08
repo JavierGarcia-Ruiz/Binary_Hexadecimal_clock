@@ -11,7 +11,6 @@ def to_binary(dec, width):
 
     while x >= 0:
         current_power = math.pow(2, x)
-        # how many powers of two fit into dec?
         how_many = int(dec / current_power)
         answer += str(how_many)
         dec -= how_many * current_power
